@@ -2,7 +2,7 @@
   <h2> Register Yourself !</h2>
 
   <form class="example-container text-center" (submit)="register()" [formGroup]="registerForm">
-    <mat-form-field class="col-md-4 col-sm-6 col-12" appearance="fill" [color]="colorControl.value">
+    <mat-form-field class="col-md-4 col-sm-12 col-12" appearance="fill" [color]="colorControl.value">
       <mat-label>Name</mat-label>
       <input matInput [formControl]="name" placeholder="Ex. Abhishek mishra" required>
       <mat-error>Please check name</mat-error>

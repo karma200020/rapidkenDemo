@@ -49,3 +49,27 @@
     color: #969696;
   }
 }
+
+@media (max-width: 576px) {
+  .title{
+    font-size: 16px !important;
+  }
+
+
+  .a{
+    font-size: 12px !important;
+  }
+
+}
+
+@media (max-width: 768px) and (min-width:577px) {
+  .title{
+    font-size: 18px !important;
+  }
+
+
+  .a{
+    font-size: 13px !important;
+  }
+
+}
