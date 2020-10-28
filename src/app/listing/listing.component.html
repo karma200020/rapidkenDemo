@@ -1,0 +1,30 @@
+<div class="row list">
+  <div class="col-3" *ngFor="let item of data">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"><span class="material-icons">
+          account_circle
+          </span></div>
+        <mat-card-title>{{item.name}}</mat-card-title>
+        <mat-card-subtitle>{{item.position}}</mat-card-subtitle>
+        <span class="material-icons close" (click)="deletedata(item)">
+          highlight_off
+          </span>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{item.about}}
+        </p>
+        <div class="join">
+          <span class="tags">Joining Date </span>
+          <span class="values"> {{ item.doj | date:"MM/dd/yy" }}</span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="null" *ngIf="data.length == 0">
+    No exisisting records found!
+  </div>
+</div>
+
+

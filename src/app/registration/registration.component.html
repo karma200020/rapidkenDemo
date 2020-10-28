@@ -1,0 +1,31 @@
+<mat-card>
+  <h2> Register Yourself !</h2>
+
+  <form class="example-container text-center" (submit)="register()" [formGroup]="registerForm">
+    <mat-form-field class="col-md-4 col-sm-6 col-12" appearance="fill" [color]="colorControl.value">
+      <mat-label>Name</mat-label>
+      <input matInput [formControl]="name" placeholder="Ex. Abhishek mishra" >
+      <mat-error>Min size: 10px</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-md-4 col-sm-6 col-12" appearance="fill" [color]="colorControl.value">
+      <mat-label>Position</mat-label>
+      <input [formControl]="position" matInput placeholder="Ex. Intern">
+      <mat-error>Min size: 10px</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width col-md-4 col-sm-6 col-12" [color]="colorControl.value" appearance="fill">
+      <mat-label>Date of joining</mat-label>
+      <input [formControl]="doj" matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="col-12" appearance="fill" [color]="colorControl.value">
+      <mat-label>About</mat-label>
+      <textarea [formControl]="about" matInput></textarea>
+      <mat-error>Min size: 10px</mat-error>
+    </mat-form-field>
+    <button mat-raised-button type="submit" color="primary" >Save Information</button>
+  </form>
+</mat-card>

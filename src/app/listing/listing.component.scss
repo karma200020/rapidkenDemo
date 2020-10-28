@@ -1,0 +1,51 @@
+.list{
+
+  .example-header-image{
+
+    .material-icons{
+      font-size: 52px;
+    }
+
+  }
+  .close{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+
+  .mat-card-avatar {
+    height: 60px;
+    width: 50px;
+  }
+
+  .mat-card-subtitle, .mat-card-content {
+    font-size: 14px;
+    color: #676767;
+  }
+
+  .mat-card-title {
+    margin-top: 5px;
+  }
+
+  .join{
+    align-content: space-between;
+    .tags{
+
+      text-transform: uppercase;
+      padding-right: 1rem;
+      color: #ff4081;
+      font-weight: 600;
+
+    }
+    .values{
+      font-weight: 600;
+    }
+  }
+
+  .null{
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    color: #969696;
+  }
+}
