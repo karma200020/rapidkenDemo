@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListingComponent implements OnInit {
 
-  data;
+  data = [];
   dataraw;
 
   constructor() {
